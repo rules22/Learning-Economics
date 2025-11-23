@@ -1,0 +1,118 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+  <title>Supply and Demand • Learning Economics with Harry</title>
+  <link rel="stylesheet" href="styles.css" />
+</head>
+<body>
+  <!-- Wave background -->
+  <div class="wave-bg">
+    <svg class="wave-svg" viewBox="0 0 1200 200" preserveAspectRatio="none">
+      <path
+        class="wave-path"
+        d="
+          M 0 100
+          Q 150 50 300 100
+          T 600 100
+          T 900 100
+          T 1200 100
+        "
+      />
+    </svg>
+  </div>
+
+  <header class="site-header">
+    <div class="container header-inner">
+      <div>
+        <h1 class="site-title">Learning Economics with Harry</h1>
+        <p class="site-tagline">Making supply and demand feel obvious, not scary.</p>
+      </div>
+
+      <div class="header-actions">
+ <nav class="site-nav">
+  <a href="index.html">Home</a>
+  <a href="about.html">ECON 101</a>
+  <a href="supply-demand.html">Supply &amp; Demand</a>
+  <a href="post-1.html">History of Economics</a>
+  <a href="gallery.html">Economic Challenges</a>
+  <a href="resources.html">Resources</a>
+  <a href="schools.html">Schools of Thought</a>
+</nav>
+        <button class="theme-toggle" type="button" aria-label="Toggle dark mode">🌙</button>
+      </div>
+    </div>
+  </header>
+
+  <main class="container">
+    <article class="post">
+      <h2 class="post-title">Supply and Demand</h2>
+      <p class="post-meta">Curves, shifts, equilibrium, and the stuff I kept mixing up.</p>
+
+      <p>
+        This page is my “supply and demand lab” – a place to drop diagrams, examples,
+        and little explanations until the logic of the model feels automatic.
+      </p>
+
+      <p>
+        I’ll use it to cover things like:
+      </p>
+      <ul>
+        <li>How to draw a clean supply and demand diagram step by step</li>
+        <li>What actually moves <em>along</em> a curve vs. what <em>shifts</em> a curve</li>
+        <li>How to see equilibrium price and quantity quickly</li>
+        <li>How taxes, price controls, and shocks show up in the graph</li>
+      </ul>
+
+      <h3 style="margin-top: 1.5rem;">Example diagrams</h3>
+
+      <!-- Example 1: basic supply & demand -->
+      <figure class="sd-figure">
+        <img src="images/sd-basic.png" alt="Basic supply and demand diagram with equilibrium point">
+        <figcaption>Basic market equilibrium: where supply meets demand.</figcaption>
+      </figure>
+
+      <!-- Example 2: shift in demand -->
+      <figure class="sd-figure">
+        <img src="images/sd-demand-shift.png" alt="Demand curve shifting to the right">
+        <figcaption>A rightward shift in demand: higher equilibrium price and quantity.</figcaption>
+      </figure>
+
+      <!-- Example 3: shift in supply -->
+      <figure class="sd-figure">
+        <img src="images/sd-supply-shift.png" alt="Supply curve shifting to the left">
+        <figcaption>A leftward shift in supply: higher price, lower quantity.</figcaption>
+      </figure>
+
+      <p style="margin-top: 1rem;">
+        To use your own diagrams, just replace the <code>src="images/…"</code> paths above
+        with the filenames of your images (for example
+        <code>src="images/calculators-market.png"</code>) and drop those image files into
+        your <code>images</code> folder.
+      </p>
+
+      <a class="read-more" href="about.html">← Back to ECON 101</a>
+    </article>
+  </main>
+
+  <footer class="site-footer">
+    <div class="container">
+      <p>© 2025 Learning Economics with Harry. All rights reserved.</p>
+    </div>
+  </footer>
+
+  <div class="gold-ticker">
+    <iframe
+      src="https://goldbroker.com/widget/live-price/XAU?currency=USD"
+      width="220"
+      height="130"
+      frameborder="0"
+      scrolling="no"
+      style="border: 0; overflow: hidden; border-radius: 12px;"
+    ></iframe>
+  </div>
+
+  <script src="script.js"></script>
+</body>
+</html>
